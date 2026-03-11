@@ -31,13 +31,13 @@ npm run dev
 ## Скриншоты
 
 ### Login
-![Login page](screenshots/login.png)
+![Login page](screenshots/login.jpg)
 
 ### Products
-![Products page](screenshots/products.png)
+![Products page](screenshots/products.jpg)
 
 ### Add product modal
-![Add product modal](screenshots/modal.png)
+![Add product modal](screenshots/modal.jpg)
 
 ## Возможные улучшения
 * улучшить UX интерфейса и более точно привести стили к макету
