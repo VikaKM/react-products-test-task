@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+# React Products Test Task
+SPA приложение для авторизации пользователя и управления списком товаров.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Функциональность
+* авторизация пользователя
+* защищенные маршруты
+* отображение списка товаров
+* поиск товаров с debounce
+* добавление нового товара через модальное окно
+* валидация формы с использованием React Hook Form и Zod
 
-Currently, two official plugins are available:
+## Технологии
+* React
+* TypeScript
+* Vite
+* React Hook Form
+* Zod
+* SCSS Modules
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname
-      }
-      // other options...
-    }
-  }
-]);
+## Установка и запуск
+```bash
+git clone https://github.com/VikaKM/react-products-test-task.git
+cd react-products-test-task
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+После запуска dev-сервера адрес приложения будет отображён в терминале
+(обычно это `http://localhost:5173`).
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+## Скриншоты
 
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname
-      }
-      // other options...
-    }
-  }
-]);
-```
+### Login
+![Login page](screenshots/login.png)
+
+### Products
+![Products page](screenshots/products.png)
+
+### Add product modal
+![Add product modal](screenshots/modal.png)
+
+## Возможные улучшения
+* улучшить UX интерфейса и более точно привести стили к макету
+* улучшить UX формы и избежать смещения интерфейса при появлении сообщений об ошибках валидации
+* добавить адаптивную верстку для корректной работы на разных размерах экранов
+* добавить unit-тесты для ключевой логики компонентов
+* улучшить обработку ошибок API: добавить более подробные сообщения и сценарии повторной попытки
+
+## Дополнительно
+AI-инструменты использовались точечно как вспомогательный инструмент.
+
+**Модель:** OpenAI GPT-5 (ChatGPT)
+
+**Примеры использованных промптов:**
+- «Проверь структуру проекта React + TypeScript и предложи улучшения»
+- «Составь чек-лист для финальной проверки frontend тестового задания перед отправкой»
+
+Ключевые технические решения, реализация функциональности и итоговая интеграция были выполнены самостоятельно.
