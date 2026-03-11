@@ -1,0 +1,461 @@
+.page {
+  min-height: 100vh;
+  padding: 0 0 24px;
+  background: #f5f5f7;
+}
+
+.topBar {
+  position: relative;
+  height: 80px;
+  margin-top: 10px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: #ffffff;
+}
+
+.pageTitle {
+  margin: 0;
+  white-space: nowrap;
+  color: #1f1f24;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.searchWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 720px;
+  height: 48px;
+  transform: translate(-50%, -50%);
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8f95a3;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.searchIcon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.searchInput {
+  width: 100%;
+  height: 100%;
+  padding: 0 16px 0 44px;
+  border: 1px solid #f8f8fa;
+  border-radius: 10px;
+  outline: none;
+  background: #f3f3f3;
+  color: #1f1f24;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.searchInput::placeholder {
+  color: #a0a3ad;
+}
+
+.searchInput:focus {
+  border-color: #d9dce5;
+  background: #ffffff;
+}
+
+.card {
+  margin: 20px 0 0;
+  overflow: hidden;
+  border: 1px solid #ececf1;
+  background: #ffffff;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 20px 44px;
+}
+
+.cardTitle {
+  margin: 0 10px;
+  color: #1f1f24;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cardActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iconButton {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #ececf1;
+  border-radius: 10px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7d8190;
+  cursor: pointer;
+}
+
+.iconButton svg {
+  width: 18px;
+  height: 18px;
+}
+
+.iconButton:hover {
+  background: #f8f9fc;
+}
+
+.addButton {
+  width: 147px;
+  height: 42px;
+  border: none;
+  border-radius: 8px;
+  background: #242edb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.addText {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.addCircle {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  border: 1.5px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addCircle svg {
+  width: 12px;
+  height: 12px;
+  color: #ffffff;
+  stroke-width: 2.5;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  padding: 0 30px;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.table thead th {
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0f1f5;
+  text-align: left;
+  white-space: nowrap;
+  color: #9aa0ae;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.table tbody td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #f5f6fa;
+  vertical-align: middle;
+  color: #1f1f24;
+  font-size: 14px;
+}
+
+.table tbody tr:hover {
+  background: #fafbff;
+}
+
+.checkboxCol {
+  width: 44px;
+}
+
+.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.sortMark {
+  display: inline-block;
+  margin-left: 6px;
+  color: #4f46e5;
+  font-size: 12px;
+}
+
+.priceCell {
+  white-space: nowrap;
+}
+
+.rubles {
+  color: #000000;
+}
+
+.kopeks {
+  color: #9ca3af;
+}
+
+.productCell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.productText {
+  width: 210px;
+  min-width: 0;
+}
+
+.productImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #ededf0;
+}
+
+.productName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.productCategory {
+  margin-top: 4px;
+  color: #a0a3ad;
+  font-size: 12px;
+}
+
+.ratingLow {
+  color: #ef4444;
+  font-weight: 400;
+}
+
+.ratingNormal {
+  color: #1f1f24;
+  font-weight: 400;
+}
+
+.rowActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.plusButton {
+  min-width: 40px;
+  height: 22px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 999px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.moreButton {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ececf1;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #9aa0ae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.moreButton svg {
+  width: 14px;
+  height: 14px;
+}
+
+.tableFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  color: #9aa0ae;
+  font-size: 13px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination button {
+  min-width: 28px;
+  padding: 0 6px;
+  border: none;
+  background: transparent;
+  color: #9aa0ae;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pageButton {
+  height: 28px;
+  border: 1px solid #ececf1 !important;
+  border-radius: 8px;
+  font-weight: 400;
+}
+
+.pageButton:hover {
+  color: #4f46e5;
+}
+
+.pageArrow {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b2b3b9;
+}
+
+.pageArrow svg {
+  width: 16px;
+  height: 16px;
+}
+
+.activePage {
+  min-width: 28px;
+  height: 28px;
+  border: none !important;
+  border-radius: 8px;
+  background: #797fea !important;
+  color: #ffffff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginationInfo {
+  color: #9aa0ae;
+  font-size: 13px;
+}
+
+.paginationCount {
+  color: #1f1f24;
+}
+
+.loadingBlock {
+  display: grid;
+  gap: 12px;
+  max-width: 320px;
+}
+
+.fetchingBlock {
+  display: grid;
+  gap: 8px;
+  max-width: 280px;
+  margin-bottom: 12px;
+}
+
+.loadingText,
+.errorText,
+.fetchingText,
+.emptyText {
+  margin: 0;
+  color: #7d8190;
+  font-size: 14px;
+}
+
+.selectedRow td:first-child {
+  position: relative;
+}
+
+.selectedRow td:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -10px;
+  width: 3px;
+  border-radius: 2px;
+  background: #3c538e;
+}
+
+.vendorCell {
+  font-weight: 600;
+}
+
+.centerColumn {
+  width: 14%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.nameColumn {
+  width: 250px;
+}
+
+.table thead th:last-child,
+.table tbody td:last-child {
+  width: 92px;
+}
+
+.table thead th.centerColumn {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .topBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pageTitle {
+    min-width: auto;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .cardActions {
+    justify-content: flex-end;
+  }
+
+  .tableFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

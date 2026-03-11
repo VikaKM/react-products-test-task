@@ -1,0 +1,29 @@
+.checkboxButton {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkboxFake,
+.selectedCheckbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+}
+
+.checkboxFake {
+  border: 1.5px solid #d7d9e0;
+  background: #ffffff;
+}
+
+.selectedCheckbox {
+  background: #3c538e;
+}
